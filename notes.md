@@ -1,0 +1,1 @@
+I learned that you have to do four things to make changes: view source control in VS Code, click on the plus under the changes drop-down, type in a message describing the change, press the checkmark to commit.
