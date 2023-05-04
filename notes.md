@@ -1,1 +1,2 @@
-I learned that you have to do four things to make changes: view source control in VS Code, click on the plus under the changes drop-down, type in a message describing the change, press the checkmark to commit.
+I learned that you have to do six things to make changes: save your code, view source control in VS Code, click on the plus under the changes drop-down, type in a message describing the change, press the checkmark to commit, then sync the changes.
+"Sync changes" means to push and pull with origin main.
