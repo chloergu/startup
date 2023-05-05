@@ -27,12 +27,14 @@ This is my initial design.
 
 - **HTML** - Four HTML pages. A starting home page, a login page, an account creation page, and the group budgeting page.
 - **CSS** - Application styling that makes TripSplit easy to use on multiple screen sizes, and a color scheme of pastel blue-green variants and gradients.
-- **JavaScript** -
-- **Service** - 
-- **DB** - 
-- **Login** - 
-- **WebSocket** - 
-- **React** - 
-- 
+- **JavaScript** - Provides login, account creation, adding expenses, expenses display, indicating that you or a group member paid or is not going to pay for something.
+- **Service** - Backend service with endpoints for:
+  - login
+  - retrieving expenses
+  - retrieving total cost/reimbursement per user
+- **DB** - Stores groups, users, expenses, and checkbox answers in database.
+- **Login** - Register and login users. Credentials securely stored in database. Can't participate in a group's budget plan unless logged in.
+- **WebSocket** - As each user adds expenses and checks boxes, their results are automatically broadcast to the whole group.
+- **React** - Application ported to use the React web framework.
 
 Here is a link to my notes: https://github.com/chloergu/startup/blob/main/notes.md 
