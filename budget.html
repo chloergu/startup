@@ -1,6 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>TripSplit</title>
     </head>
+    <body>
+        <header>
+            <h1 align="center">TripSplit</h1>
+        </header>
+        <header>
+            <h2>Group Name</h2>
+        </header>
+        <table>
+            <tr>
+                <th> Cost </th>
+                <th> Expense </th>
+                <th> Paid </th>
+                <th> Not Paying </th>
+                <th>
+                    <label for="paidcheckbox"> I paid! </label>
+                </th>
+                <th>
+                    <label for="notpayingcheckbox"> I don't need <br>to pay for this. </label>
+                </th>
+            </tr>
+            <tr>
+                <th> $0 </th>
+                <th> Gas </th>
+                <th> user1 </th>
+                <th> -user2 <br> -user3 </th>
+                <th> 
+                    <input type="checkbox" id="paidcheckbox" name="ipaid" value="checkbox1" />
+                </th>
+                <th>
+                    <input type="checkbox" id="notpayingcheckbox" name="notpaying" value="checkbox1" />
+                </th>
+                <th>
+                    <button type="removerow">Delete expense</button>
+                </th>
+            </tr>
+        </table>
+        <li>
+            <button type="newrow">+ Add another expense</button>
+        </li>
+        <li>
+            <br>Total: $0<br><br>
+            You're owed:<br>
+            <button type="newrow">[Expand]</button>
+            <br>You owe:<br>
+            <button type="newrow">[Expand]</button>
+            <br><br>You are in simplified mode.
+            <button type="newrow">Details mode</button>
+            <br><br>
+        </li>
+        <section>
+            <p>Members:</p>
+            <ul>
+                <li>user1</li>
+                <li>user2</li>
+                <li>user3</li>
+            </ul>
+        </section>
+        <button type="newrow">Copy group invite link</button>
+        <hr />
+            <span class="text-reset"><a href="index.html">Log out</a></span>
+        <br />
+    </body>
 </html>
