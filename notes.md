@@ -7,3 +7,5 @@ A merge conflict is where you make and commit changes in two different places in
 You can edit a video or image file size with width=300 or any other number.
 
 To embed with HTML from YouTube, you need to go to share and then embed.
+
+I have added both the html and css versions of simon to my startup website.
