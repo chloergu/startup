@@ -37,4 +37,9 @@ This is my initial design.
 - **WebSocket** - As each user adds expenses and checks boxes, their results are automatically broadcast to the whole group.
 - **React** - Application ported to use the React web framework.
 
+### HTML deliverable
+
+- **HTML pages** - Five HTML pages that represent creating an account, logging in, creating/joining a group, the actual budgeting page, and an about page.
+- **Links** - The login page automatically links to the create/join group page and the account creation page. The account creation page links to the create/join group page and the login page. The create/join group page links to the budgeting page and the login page. The budgeting page links to the login page and the create/join group page. The about page links to the login page. All pages also link to this GitHub repository and the about page.
+
 Here is a link to my notes: https://github.com/chloergu/startup/blob/main/notes.md 
