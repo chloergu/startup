@@ -41,5 +41,10 @@ This is my initial design.
 
 - **HTML pages** - Five HTML pages that represent creating an account, logging in, creating/joining a group, the actual budgeting page, and an about page.
 - **Links** - The login page automatically links to the create/join group page and the account creation page. The account creation page links to the create/join group page and the login page. The create/join group page links to the budgeting page and the login page. The budgeting page links to the login page and the create/join group page. The about page links to the login page. All pages also link to this GitHub repository and the about page.
+- **Text** - The expenses, costs, and users are represented with text.
+- **Images** - I included an image of myself in the about page.
+- **Login** - Input box and submit button for login on both the login and create account pages.
+- **Database** - The expenses, costs, and user checkbox selections represent data pulled from the database.
+- **Websocket** - When you add another expense and/or check a paid/not paying box, it shows up for your group in real time.
 
 Here is a link to my notes: https://github.com/chloergu/startup/blob/main/notes.md 
