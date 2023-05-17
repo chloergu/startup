@@ -1,11 +1,11 @@
 * {
     box-sizing: border-box;
-    
 }
 
 html {
     margin: 2rem;
     height: 100%;
+    background: #ADD8E6;
 }
 
 body {
@@ -15,15 +15,17 @@ body {
     flex-direction: column;
     min-width: 375px;
     font-family: 'Candara', sans-serif !important;
-    background: #EEA9B6
+    background: #ADD8E6;
 }
 
 header {
     flex: 0 80px;
+    background: #ADD8E6;
 }
 
 footer {
     flex: 0 30px;
+    background: #4169e1;
 }
 
 footer r {
