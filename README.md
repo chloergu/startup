@@ -47,4 +47,13 @@ This is my initial design.
 - **Database** - The expenses, costs, and user checkbox selections represent data pulled from the database.
 - **Websocket** - When you add another expense and/or check a paid/not paying box, it shows up for your group in real time.
 
+### CSS deliverable
+
+- **Header, footer, and main content body**
+- **Navigation elements** - I turned some hyperlinks into buttons that flash when you hover over them. I changed the hyperlink colors to fit the color scheme.
+- **Responsive to window resizing** - My headers and footers look good on all window sizes.
+- **Application elements** - I used good contrast of colors and whitespace to make the UI more user-friendly.
+- **Application text content** - Consistent singular font
+- **Application images** - Used photos as a kind of buffer above the hyperlink right below.
+
 Here is a link to my notes: https://github.com/chloergu/startup/blob/main/notes.md 
