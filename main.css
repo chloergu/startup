@@ -3,7 +3,7 @@
 }
 
 html {
-    margin: 2rem;
+    margin: 0;
     height: 100%;
     background: #ADD8E6;
 }
@@ -21,6 +21,7 @@ body {
 header {
     flex: 0 80px;
     background: #ADD8E6;
+    padding: 0 .5em;
 }
 
 footer {
