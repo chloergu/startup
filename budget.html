@@ -17,10 +17,10 @@
         />
     </head>
     <body>
-        <header class>
-            <nav class="navbar navbar-expand-lg">
+        <header class="sticky-top">
+            <nav class="navbar navbar-expand-lg navbar-light">
               <div class="container-fluid">
-                <a class="navbar-brand text-center" href="https://getbootstrap.com/" >
+                <a class="navbar-brand text-center">
                     <h1 align="center">TripSplit</h1>
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
@@ -29,13 +29,10 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                   <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                      <a class="nav-link" href="#">Home</a>
+                      <a class="nav-link" href="home.html">Log out of your group</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#btn">Button</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#card">Card</a>
+                      <a class="nav-link" href="home.html">Leave your group</a>
                     </li>
                   </ul>
                 </div>
@@ -44,30 +41,32 @@
           </header>
 
         <header>
-            <h1 align="center">TripSplit</h1>
+            <h2 align="center">Group Name</h2>
         </header>
-        <header>
-            <h2>Group Name</h2>
-        </header>
-        <table>
-            <tr>
-                <th> Cost </th>
-                <th> Expense </th>
-                <th> Paid </th>
-                <th> Not Paying </th>
-                <th>
+
+        <main class="container-fluid bg-secondary text-center">
+            <table class="table table-bordered table-secondary table-striped-columns">
+              <thead class="table-dark">
+                <tr>
+                  <th>Cost</th>
+                  <th>Expense</th>
+                  <th>Paid</th>
+                  <th>Not Paying</th>
+                  <th>
                     <label for="paidcheckbox"> I paid! </label>
                 </th>
                 <th>
-                    <label for="notpayingcheckbox"> I don't need <br>to pay for this. </label>
+                    <label for="notpayingcheckbox" align="center"> I don't need to pay. </label>
                 </th>
-            </tr>
-            <tr>
-                <th> $0 </th>
-                <th> Gas </th>
-                <th> user1 </th>
-                <th> -user2 <br> -user3 </th>
-                <th> 
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>$20</td>
+                  <td>Gas</td>
+                  <td>user1</td>
+                  <td> -user2 <br> -user3 </td>
+                  <th> 
                     <input type="checkbox" id="paidcheckbox" name="ipaid" value="checkbox1" checked />
                 </th>
                 <th>
@@ -76,12 +75,43 @@
                 <th>
                     <button type="removerow">Delete expense</button>
                 </th>
-            </tr>
-        </table>
-        <li>
-            <button type="newrow">+ Add another expense</button>
-        </li>
-        <li>
+                </tr>
+                <tr>
+                  <td>$40</td>
+                  <td>Groceries</td>
+                  <td>user3</td>
+                  <td></td>
+                  <th> 
+                    <input type="checkbox" id="paidcheckbox" name="ipaid" value="checkbox1"/>
+                </th>
+                <th>
+                    <input type="checkbox" id="notpayingcheckbox" name="notpaying" value="checkbox1" />
+                </th>
+                <th>
+                    <button type="removerow">Delete expense</button>
+                </th>
+                </tr>
+                <tr>
+                  <td>$10</td>
+                  <td>Parking</td>
+                  <td>user1</td>
+                  <td></td>
+                  <th> 
+                    <input type="checkbox" id="paidcheckbox" name="ipaid" value="checkbox1" checked />
+                </th>
+                <th>
+                    <input type="checkbox" id="notpayingcheckbox" name="notpaying" value="checkbox1" />
+                </th>
+                <th>
+                    <button type="removerow">Delete expense</button>
+                </th>
+                </tr>
+              </tbody>
+            </table>
+          </main>
+
+        <button type="newrow">+ Add another expense</button>
+        
             <br>Total: $0<br><br>
             You're owed:<br>
             <button type="newrow">[Expand]</button>
@@ -90,7 +120,7 @@
             <br><br>You are in simplified mode.
             <button type="newrow">Details mode</button>
             <br><br>
-        </li>
+
         <section>
             <p>Members:</p>
             <ul>
@@ -100,17 +130,7 @@
             </ul>
         </section>
         <button type="newrow">Copy group invite link</button>
-        <hr />
-            You are logged in as user1.
-            <span class="text-reset"><a href="index.html">Log out</a></span>
-            <br>
-            Log out of your group 
-            <span class="text-reset"><a href="home.html">here</a></span>.
-            <br>Leave your group 
-            <span class="text-reset"><a href="home.html">here</a></span>.
-            <br><br>
-            <span class="text-reset"><a href="about.html">About</a></span><br>
-        <br />
+        <span class="text-reset"><a href="index.html">Log out</a></span>
         
         <footer class="bg-dark fixed-bottom">
             <div class="container-fluid">
