@@ -4,8 +4,9 @@
 
 html {
     margin: 2rem;
-    height: 100%;
+    height: 30px;
     background: #ADD8E6;
+    
 }
 
 body {
@@ -15,7 +16,7 @@ body {
     flex-direction: column;
     min-width: 375px;
     font-family: 'Candara', sans-serif !important;
-    background: #ADD8E6;
+    padding-bottom: 30px;
 }
 
 header {
