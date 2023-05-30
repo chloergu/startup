@@ -30,6 +30,10 @@ footer {
     background: #4169e1;
 }
 
+footer l {
+    float: left;
+}
+
 footer r {
     float: right;
 }
