@@ -28,18 +28,18 @@
         <main class="group-box">
         <div class="host-box">
             <br>
-            <form method="get" id="formID">
+            <form method="get" id="formID" required="">
                 <label for="name">Host a group</label>
-                <input type="text" id="groupName" placeholder="Create a group name"  value="Reset" required=""/>
-                <c class="btn btn-info" role="button" onclick="hostGroup();clearFunction()" value="Reset">Submit</c>
+                <input type="text" id="groupName" placeholder="Create a group name" required=""/>
+                <c class="btn btn-info" role="button" onclick="hostGroup();clearFunction()">Submit</c>
             </form>
         </div>
         <br>
         <div class="join-box">
-            <form method="get" id="formID">
+            <form method="get" id="formID" required="">
                 <label for="name">Join a group</label>
-                <input type="text" id="group" placeholder="Enter an existing group"  value="Reset" required=""/>
-                <c class="btn btn-info" role="button" onclick="joinGroup();clearFunction()" value="Reset">Submit</c>
+                <input type="text" id="group" placeholder="Enter an existing group" required=""/>
+                <c class="btn btn-info" role="button" onclick="joinGroup();clearFunction()">Submit</c>
             </form>
         </div>
         </main>
