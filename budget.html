@@ -151,7 +151,11 @@
             </table>
           </main>
 
-        <button type="newrow">+ Add another expense</button>
+          <form method="get" id="addExpense" required="">
+            <input type="text" id="cost" placeholder="Enter cost" required=""/>
+            <input type="text" id="expense" placeholder="Enter expense" required=""/>
+            <button type="newrow" role="button" onclick="hostGroup();clearFunction()">+ Add another expense</button>
+          </form>
         
             <br>Total: $110<br><br>
             You're owed: $25.84<br>
@@ -165,14 +169,22 @@
         <section>
             <p>Members:</p>
             <ul>
+                <li><span class="user-name" id="user-name"></span></li>
                 <li>user1</li>
                 <li>user2</li>
                 <li>user3</li>
-                <li>user4</li>
             </ul>
+            <script>
+              document.getElementById("user-name").innerHTML = localStorage.getItem('user1') ?? 'Anonymous';
+          </script>
         </section>
         <button type="newrow" onclick="copyInviteLink()">Copy group invite link</button>
-        <span class="text-reset"><a href="index.html">Log out</a></span>
+        <div class="user">
+          You are logged in as <span class="username" id="username"></span>. <a href="index.html">Log out</a>
+          <script>
+              document.getElementById("username").innerHTML = localStorage.getItem('user1') ?? 'Anonymous';
+          </script>
+        </div>
         
         <footer class="bg-dark fixed-bottom">
             <div class="container-fluid">
