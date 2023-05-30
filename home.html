@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>TripSplit</title>
 
+        <script src="home.js"></script>
         <link rel="stylesheet" href="main.css" />
         <link rel="stylesheet" href="home.css" />
         <link rel="stylesheet" href="notbudget.css" />
@@ -22,26 +23,33 @@
         <header>
             <h1 align="center">TripSplit</h1>
         </header>
-        <div class="text-center">
+        
+        <main class="group-box">
         <div class="host-box">
             <br>
-            <form method="get" action="budget.html">
+            <form method="get" id="formID">
                 <label for="name">Host a group</label>
-                <input type="text" id="groupname" placeholder="Create a group name" />
-                <button type="submit">Submit</button>
+                <input type="text" id="groupName" placeholder="Create a group name"  value="Reset" required=""/>
+                <c class="btn btn-info" role="button" onclick="hostGroup();clearFunction()" value="Reset">Submit</c>
             </form>
         </div>
         <br>
         <div class="join-box">
-            <form method="get" action="budget.html">
+            <form method="get" id="formID">
                 <label for="name">Join a group</label>
-                <input type="text" id="groupname" placeholder="Enter an existing group" />
-                <button type="submit">Submit</button>
+                <input type="text" id="group" placeholder="Enter an existing group"  value="Reset" required=""/>
+                <c class="btn btn-info" role="button" onclick="joinGroup();clearFunction()" value="Reset">Submit</c>
             </form>
         </div>
+        </main>
+
         <br>
         <img alt="mountains" width="500" src="mountains.JPG" /><br>
-        <span class="text-reset">You are logged in as user1. <a href="index.html">Log out</a></span>
+        <div class="user">
+            You are logged in as <span class="user-name" id="user-name"></span>. <a href="index.html">Log out</a>
+            <script>
+                document.getElementById("user-name").innerHTML = localStorage.getItem('user1') ?? 'Anonymous';
+            </script>
         </div>
         <footer class="bg-dark fixed-bottom">
             <div class="container-fluid">
@@ -53,6 +61,9 @@
                 </r>
             </div>
         </footer>
+
+        <script type="text/javascript" src="jquery-1.11.3.min.js"></script>
+        <script type="text/javascript" language="javascript" src="home.js"></script>
 
     </body>
 </html>
