@@ -1,30 +1,19 @@
-//Store user's username and password
-function store()
-{
-    var user = document.getElementById('username');
-    var pass = document.getElementById('password');
-    localStorage.setItem('username', user.value)
-    localStorage.setItem('password', pass.value)
-
-    window.location.href = "home.html";
-}
-
 //login if username and password match storage
-function checkLogin()
+function login()
 {
     //get set stored data
-    var userStored = localStorage.getItem('user')
-    var passStored = localStorage.getItem('pass')
+    var userStored = localStorage.getItem('user1');
+    var passStored = localStorage.getItem('pass');
 
     //data entered from login-form
     var userName = document.getElementById('userName');
     var userPass = document.getElementById('userPass');
 
-    if (userStored == userName && passStored == userPass) {
+    if (userStored == userName.value && passStored == userPass.value) {
         window.location.href = "home.html";
     }
     else {
-        alert("Please enter a valid username and password.");
+        alert('Please enter a valid username and password.');
     }
 
 }

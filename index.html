@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>TripSplit</title>
 
-        <script src="budget.js"></script>
+        <script src="login.js"></script>
         <link rel="stylesheet" href="main.css" />
         <link rel="stylesheet" href="loginbox.css" />
         <link rel="stylesheet" href="notbudget.css" />
@@ -27,16 +27,16 @@
             <h2>Login</h2>
             <form>
                 <div class="user-box">
-                    <input type="username" name="userName" required="">
+                    <input type="text" id="userName" name="userName" value="" required="">
                     <label>Username</label>
                 </div>
                 <div class="user-box">
-                    <input type="password" name="userPass" required="">
+                    <input type="password" id="userPass" name="userPass" value="" required="">
                     <label>Password</label>
                 </div>
                 <div class="text-center">
 
-                <a class="btn btn-info" role="button" onclick="checkLogin()">Enter</a>
+                <a class="btn btn-info" role="button" onclick="login()">Enter</a>
                 
                 </div>
                 <br>
@@ -56,5 +56,9 @@
                 </r>
             </div>
         </footer>
+
+        <script type="text/javascript" src="jquery-1.11.3.min.js"></script>
+        <script type="text/javascript" language="javascript" src="login.js"></script>
+
     </body>
 </html>
